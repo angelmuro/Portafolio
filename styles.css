@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&family=Rubik:wght@600&display=swap');
+
+:root {
+    --color1: #34b0BE;
+    --color2: #ff4f6f;
+    --color3: #EF9919;
+    --color4: #adadad;
+    --color5: #e5e5e5;
+    --color6: #ffffff;
+   font: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ffrubik {
+   font-family: 'Rubik', sans-serif; 
+}
+body {
+    background-color: var(--color4); 
+}   
+h1 {
+    color: #e84664;
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif; 
+}
+h2 {
+    font-family: 'Rubik', sans-serif;  
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.navbar {
+    display: flex;
+    justify-content: end;
+    height: 50px;
+    padding: 0 1rem;
+    position: fixed;
+    width: 100%;
+    color: White;
+    background-color: #1a1818;
+}
+.menu {
+    position: fixed;
+    background-color: #0c0b0bbc;
+    left: 0;
+    width: 100%;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
+    color: var(--color4);
+    transform: translateY(-200%);
+    transition: transform 0.5s;
+}
+.menu a {    
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    transition: 0.5s, background-color 0.5s;
+}
+.menu a:hover {
+    color: white;
+}
+.menu__show {
+    transform: translateY(0);
+}
+.icon__menu {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--White);
+}
+
+
+
+.home {
+    background: url(/Logos-Imágenes/php.jpg);   
+    background-size: cover;
+    height: 920px;
+    overflow: hidden; 
+}
+.home__conatiner{
+    position: relative;
+}
+.home__hijo {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 400px 0 0 0px;
+    gap: 15px;
+}
+.home__img {
+    margin: -30px 0 0 0px;
+}
+.home__name {
+    font-size: 35px;
+}
+.home__text {
+    color: rgb(250, 250, 250);
+    text-align: center;
+    font-size: 30px;
+}
+
+.home__img-foto {
+    border-radius: 150px;
+    background-color: var(--color4);  
+    width: 250px;
+    height: 250px;  
+}
+
+
+
+
+
+.about {
+    max-width: 900px;    
+    display: flex;
+    justify-items: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 30px;
+    margin: auto;
+}
+.about__container {
+   display: flex;
+   flex-wrap: wrap;  
+   margin: auto;
+}
+.about__text {
+    max-width: 400px;  
+}
+.about__name {
+    margin-bottom: 20px;
+}
+.about__logo {
+    text-align: center;
+    margin-left: 20px;
+}
+
+
+.content__servicios {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px;
+    text-align: center;
+}
+.habilidades {
+    width: 150px;
+    height: 130px;
+    border-radius: 1px;
+    margin: 20px;
+
+    display: inline-block;
+   background-color: var(--color6);
+}
+.habilidades__icon {
+    margin: 20px;
+    padding: auto;
+}
+.Mi_portafolio {  
+    text-align: center;
+}
+.briefcase {
+    width: 300px;
+    padding: 5px;
+    border-radius: 15px;
+}
+.Contact {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px;  
+    text-align: center;
+}
+.contact__container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+.contact__img {
+    width: 60px;
+    background-color: white; 
+    margin: 30px;
+    cursor: pointer;
+    box-shadow: 1px 5px 10px var(--color6);
+    border-radius: 8px;
+}
+.contact__img:hover {
+    filter: brightness(1.3);
+}
+
+
+
+footer {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+@media (min-width: 700px) {
+    .img__mobile {
+        display: none;
+    }
+
+    .img__desktop {
+        display: block;
+    }
+
+    .icon__menu {
+        display: none;
+    }
+
+    .menu {
+        position: static;
+        width: auto;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        gap: 1rem;
+        transform: translateY(0);
+    }
+
+   
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
