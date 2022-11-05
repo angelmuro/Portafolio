@@ -173,6 +173,10 @@ a {
     width: 300px;
     padding: 5px;
     border-radius: 15px;
+    box-shadow: 1px 5px 10px var(--color6);
+}
+.briefcase:hover {
+    filter: brightness(1.3);
 }
 .Contact {
     max-width: 900px;
