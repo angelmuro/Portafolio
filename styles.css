@@ -160,26 +160,19 @@ a {
     padding: 50px;
     text-align: center;
 }
+
+
 .habilidades {
-    display: flex;
+    display: flex;  
+    gap: 50px ;   
     justify-content: center;
+    flex-wrap: wrap;
 }
 .skilss{
    width: 150px;
    height: 150px;
-   animation-name: mianimacion;
-   animation-duration: 4s;
-   position: relative;
-   animation-iteration-count: infinite;
 }
 
-@keyframes mianimacion {
-    0% {left: 0;top: 0px;}
-    25% {left: 20px;top: 0px;}
-    50% {left: 20px;top: 20px;}
-    75% {left: 0px;top: 20px;}
-    100% {left: 0px;top: 0px;}
-}
 
 .Mi_portafolio {  
     text-align: center;
